@@ -3,9 +3,11 @@ const express = require('express');
 const router = express.Router();
 
 
-const contactsController =  require('../controllers/books');
+const bookController =  require('../controllers/books');
 
-router.get('/', contactsController.getAll);
-router.get('/:id', contactsController.getSingle);
-
-module.exports = router;
+router.get('/', bookController.getAll);
+router.get('/:id', bookController.getSingle);
+router.post('/', bookController.createBook)
+router.put('/:id', bookController.updateBook)
+router.delete('/:id', bookController.deleteBook)
+module.exports = router;                                                                                                    

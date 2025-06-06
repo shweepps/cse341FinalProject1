@@ -6,4 +6,36 @@ http://localhost:3000/books
 
 ###
 
-http://localhost:3000/books/6842e919eb52eca3598b50ad
+http://localhost:3000/books/68436e54c81ae5877b0a6163
+
+###
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+  "title": "The MZulus",
+  "author": "Lwazi Moeta",
+  "isbn": "978-1-50319-999-8",
+  "publishedDate": "2021-04-04",
+  "genre": "Historical Fiction",
+  "pages": 3874,
+  "language": "Sesotho"
+}
+###
+
+PUT http://localhost:3000/books/68436e54c81ae5877b0a6163
+Content-Type: application/json
+
+{
+  "title": "The Mopelis - Revised Edition",
+  "author": "Lwazi Moeta",
+  "isbn": "978-1-53319-909-8",
+  "publishedDate": "2021-04-04",
+  "genre": "Historical Fiction",
+  "pages": 3980,
+  "language": "English"
+}
+
+###
+
+DELETE http://localhost:3000/books/68436e54c81ae5877b0a6163
