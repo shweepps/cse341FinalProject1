@@ -22,7 +22,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-// ✅ Fix headers and header name typo
+// 
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Z-Key');
@@ -68,6 +68,8 @@ app.get('/', (req, res) => {
     res.send("Logged Out");
   }
 });
+
+app.get('/github', passport.authenticate('github', { scope: [ 'user:email' ] }));
 
 app.get('/github/callback', passport.authenticate('github', {
   failureRedirect: '/api-docs', session: false}),
