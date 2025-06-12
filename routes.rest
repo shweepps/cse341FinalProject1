@@ -6,7 +6,7 @@ http://localhost:3000/books
 
 ###
 
-http://localhost:3000/books/68436e54c81ae5877b0a6163
+http://localhost:3000/books/6842e919eb52eca3598b50ad
 
 ###
 POST http://localhost:3000/books
@@ -23,14 +23,14 @@ Content-Type: application/json
 }
 ###
 
-PUT http://localhost:3000/books/68436e54c81ae5877b0a6163
+PUT http://localhost:3000/books/6842e919eb52eca3598b50ad
 Content-Type: application/json
 
 {
   "title": "The Mopelis - Revised Edition",
   "author": "Lwazi Moeta",
   "isbn": "978-1-53319-909-8",
-  "publishedDate": "2021-04-04",
+  "publishedDate": "202-04-04",
   "genre": "Historical Fiction",
   "pages": 3980,
   "language": "English"
@@ -38,4 +38,4 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:3000/books/68436e54c81ae5877b0a6163
+DELETE http://localhost:3000/books/6844342d1db2b6ad2e83dd2a
