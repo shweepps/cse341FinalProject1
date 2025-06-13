@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const bookController =  require('../controllers/books');
-const ensreAuth = require('../middleware/authMiddleware')
+const ensreAuth = require('../middleware/authMiddleware');
 
 router.get('/', bookController.getAll);
 router.get('/:id', bookController.getSingle);
