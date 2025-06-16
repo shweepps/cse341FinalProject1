@@ -5,33 +5,14 @@
     "description": "API for managing Recipes",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "cse341finalproject1.onrender.com",
   "basePath": "/",
   "schemes": [
     "http",
     "https"
   ],
   "paths": {
-    "/login": {
-      "get": {
-        "description": "",
-        "responses": {
-          "default": {
-            "description": ""
-          }
-        }
-      }
-    },
-    "/logout": {
-      "get": {
-        "description": "",
-        "responses": {
-          "default": {
-            "description": ""
-          }
-        }
-      }
-    },
+   
     "/recipes/": {
       "get": {
         "description": "",
