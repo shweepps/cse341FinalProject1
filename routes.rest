@@ -2,40 +2,60 @@ http://localhost:3000/
 
 ###
 
-http://localhost:3000/books
+http://localhost:3000/recipes
 
 ###
 
-http://localhost:3000/books/6842e919eb52eca3598b50ad
+http://localhost:3000/recipes/684f32d431875c50de2e4494
 
 ###
-POST http://localhost:3000/books
+POST http://localhost:3000/recipes
 Content-Type: application/json
 
 {
-  "title": "The MZulus",
-  "author": "Lwazi Moeta",
-  "isbn": "978-1-50319-999-8",
-  "publishedDate": "2021-04-04",
-  "genre": "Historical Fiction",
-  "pages": 3874,
-  "language": "Sesotho"
+  "title": "Indian Chicken Curry",
+  "ingredients": [
+    "chicken",
+    "onion",
+    "tomato",
+    "curry powder",
+    "yogurt"
+  ],
+  "instructions": "Sauté onions and tomatoes. Add chicken and curry powder. Simmer with yogurt until cooked.",
+  "cookingTime": 40,
+  "difficulty": "Medium",
+  "tags": [
+    "indian",
+    "spicy"
+  ],
+  "imageUrl": "https://example.com/curry.jpg",
+  "createdBy": "user789"
 }
 ###
 
-PUT http://localhost:3000/books/6842e919eb52eca3598b50ad
+PUT http://localhost:3000/recipes/684f3d073851fec4b131e5ca
 Content-Type: application/json
 
 {
-  "title": "The Mopelis - Revised Edition",
-  "author": "Lwazi Moeta",
-  "isbn": "978-1-53319-909-8",
-  "publishedDate": "202-04-04",
-  "genre": "Historical Fiction",
-  "pages": 3980,
-  "language": "English"
+  "title": "Chicken Curry",
+  "ingredients": [
+    "chicken",
+    "onion",
+    "tomatoes",
+    "curry powder",
+    "yogurt"
+  ],
+  "instructions": "Sauté onions and tomatoes. Add chicken and curry powder. Simmer with yogurt until cooked.",
+  "cookingTime": 40,
+  "difficulty": "Medium",
+  "tags": [
+    "indian",
+    "spicy"
+  ],
+  "imageUrl": "https://example.com/curry.jpg",
+  "createdBy": "user789"
 }
 
 ###
 
-DELETE http://localhost:3000/books/6844342d1db2b6ad2e83dd2a
+DELETE http://localhost:3000/recipes/684f3d073851fec4b131e5ca
