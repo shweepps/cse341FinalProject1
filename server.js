@@ -83,6 +83,10 @@ mongodb.initDb((err) => {
   if (err) {
     console.error(err);
   } else {
-    app.listen(port, () => console.log(`DB connected. Server running on port: ${port}`));
+    if (require.main === module) {
+      app.listen(port, () => console.log(`DB connected. Server running on port: ${port}`));
+    }
   }
 });
+
+module.exports = app; // ✅ allow importing in tests

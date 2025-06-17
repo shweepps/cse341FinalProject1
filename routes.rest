@@ -2,7 +2,9 @@ http://localhost:3000/
 
 ###
 
-http://localhost:3000/recipes
+http://localhost:3000/users
+
+
 
 ###
 

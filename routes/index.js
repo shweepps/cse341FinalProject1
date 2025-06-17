@@ -6,6 +6,9 @@ router.use('/', require('./swagger'));
 
 router.use('/recipes', require('./recipes'));
 router.use('/users', require('./users'));
+router.use('/comments', require('./comments'));
+router.use('/favorites', require('./favorites'));
+
 
 router.get('/login', passport.authenticate('github'), (res,req) => {});
 
