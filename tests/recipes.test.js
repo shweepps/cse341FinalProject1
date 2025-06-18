@@ -1,6 +1,6 @@
 const request = require('supertest');
-const app = require('./server'); 
-const { initDb } = require('./db/connection');
+const app = require('../server'); 
+const { initDb } = require('../db/connection');
 
 
 beforeAll((done) => {

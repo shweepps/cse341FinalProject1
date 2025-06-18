@@ -1,19 +1,26 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Receipes API",
+    "title": "API",
     "description": "API for managing Recipes",
     "version": "1.0.0"
   },
-  "host": "cse341finalproject1.onrender.com",
+  "host": "https://cse341finalproject1.onrender.com/",
   "basePath": "/",
-  "schemes": [
-    "https"
+  "schemes": ["https"],
+  "tags": [
+    { "name": "Recipes", "description": "Operations about recipes" },
+    { "name": "Users", "description": "Operations about users" },
+    { "name": "Comments", "description": "Operations about comments" },
+    { "name": "Favorites", "description": "Operations about favorites" }
+    
   ],
   "paths": {
-  
+ 
+
     "/recipes/": {
       "get": {
+        "tags": ["Recipes"],
         "description": "",
         "responses": {
           "200": {
@@ -25,6 +32,7 @@
         }
       },
       "post": {
+         "tags": ["Recipes"],
         "description": "",
         "parameters": [
           {
@@ -78,7 +86,9 @@
       }
     },
     "/recipes/{id}": {
+      
       "get": {
+         "tags": ["Recipes"],
         "description": "",
         "parameters": [
           {
@@ -104,6 +114,7 @@
         }
       },
       "put": {
+         "tags": ["Recipes"],
         "description": "",
         "parameters": [
           {
@@ -162,6 +173,7 @@
         }
       },
       "delete": {
+         "tags": ["Recipes"],
         "description": "",
         "parameters": [
           {
@@ -191,7 +203,9 @@
       }
     },
     "/users/": {
+      
       "get": {
+         "tags": ["Users"],
         "description": "",
         "responses": {
           "200": {
@@ -203,6 +217,7 @@
         }
       },
       "post": {
+        "tags": ["Users"],
         "description": "",
         "parameters": [
           {
@@ -242,6 +257,8 @@
     },
     "/users/{id}": {
       "get": {
+        
+        "tags": ["Users"],
         "description": "",
         "parameters": [
           {
@@ -264,6 +281,7 @@
         }
       },
       "put": {
+        "tags": ["Users"],
         "description": "",
         "parameters": [
           {
@@ -313,6 +331,7 @@
         }
       },
       "delete": {
+        "tags": ["Users"],
         "description": "",
         "parameters": [
           {
@@ -343,6 +362,7 @@
     },
     "/comments/": {
       "get": {
+        "tags": ["Comments"],
         "description": "",
         "responses": {
           "200": {
@@ -354,6 +374,7 @@
         }
       },
       "post": {
+        "tags": ["Comments"],
         "description": "",
         "parameters": [
           {
@@ -393,6 +414,7 @@
     },
     "/comments/{id}": {
       "get": {
+        "tags": ["Comments"],
         "description": "",
         "parameters": [
           {
@@ -418,6 +440,7 @@
         }
       },
       "put": {
+        "tags": ["Comments"],
         "description": "",
         "parameters": [
           {
@@ -458,6 +481,7 @@
         }
       },
       "delete": {
+        "tags": ["Comments"],
         "description": "",
         "parameters": [
           {
@@ -488,6 +512,7 @@
     },
     "/favorites/": {
       "get": {
+        "tags": ["Favorites"],
         "description": "",
         "responses": {
           "200": {
@@ -499,6 +524,7 @@
         }
       },
       "post": {
+         "tags": ["Favorites"],
         "description": "",
         "parameters": [
           {
@@ -535,6 +561,7 @@
     },
     "/favorites/{id}": {
       "get": {
+        "tags": ["Favorites"],
         "description": "",
         "parameters": [
           {
@@ -560,6 +587,7 @@
         }
       },
       "delete": {
+         "tags": ["Favorites"],
         "description": "",
         "parameters": [
           {

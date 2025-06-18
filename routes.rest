@@ -1,16 +1,13 @@
-http://localhost:3000/
+### Home Route
+GET http://localhost:3000/
 
-###
+### Get all comments
+GET http://localhost:3000/comments
 
-http://localhost:3000/users
+### Get a single recipe by ID
+GET http://localhost:3000/recipes/684f32d431875c50de2e4494
 
-
-
-###
-
-http://localhost:3000/recipes/684f32d431875c50de2e4494
-
-###
+### Create a new recipe
 POST http://localhost:3000/recipes
 Content-Type: application/json
 
@@ -33,8 +30,8 @@ Content-Type: application/json
   "imageUrl": "https://example.com/curry.jpg",
   "createdBy": "user789"
 }
-###
 
+### Update an existing recipe
 PUT http://localhost:3000/recipes/684f3d073851fec4b131e5ca
 Content-Type: application/json
 
@@ -58,6 +55,88 @@ Content-Type: application/json
   "createdBy": "user789"
 }
 
-###
-
+### Delete a recipe by ID
 DELETE http://localhost:3000/recipes/684f3d073851fec4b131e5ca
+
+### Get all users
+GET http://localhost:3000/users
+
+### Get user by ID
+GET http://localhost:3000/users/684f3d073851fec4b131e5cb
+
+### Create a new user
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "johndoe@example.com"
+}
+
+### Update a user
+PUT http://localhost:3000/users/684f3d073851fec4b131e5cb
+Content-Type: application/json
+
+{
+  "name": "John Updated",
+  "email": "johnupdated@example.com"
+}
+
+### Delete a user
+DELETE http://localhost:3000/users/684f3d073851fec4b131e5cb
+
+### Get all favorites
+GET http://localhost:3000/favorites
+
+### Get favorite by ID
+GET http://localhost:3000/favorites/64e6b893b3df4c1f8cf5030f
+
+### Create a favorite
+POST http://localhost:3000/favorites
+Content-Type: application/json
+
+{
+  "userId": "user789",
+  "recipeId": "684f32d431875c50de2e4494"
+}
+
+### Update a favorite
+PUT http://localhost:3000/favorites/64e6b893b3df4c1f8cf5030f
+Content-Type: application/json
+
+{
+  "userId": "user789",
+  "recipeId": "684f3d073851fec4b131e5ca"
+}
+
+### Delete a favorite
+DELETE http://localhost:3000/favorites/64e6b893b3df4c1f8cf5030f
+
+### Get all comments
+GET http://localhost:3000/comments
+
+### Get comment by ID
+GET http://localhost:3000/comments/684f3d073851fec4b131e5cc
+
+### Create a comment
+POST http://localhost:3000/comments
+Content-Type: application/json
+
+{
+  "recipeId": "684f32d431875c50de2e4494",
+  "author": "Jane",
+  "text": "Delicious recipe!"
+}
+
+### Update a comment
+PUT http://localhost:3000/comments/684f3d073851fec4b131e5cc
+Content-Type: application/json
+
+{
+  "recipeId": "684f32d431875c50de2e4494",
+  "author": "Jane Updated",
+  "text": "Absolutely tasty!"
+}
+
+### Delete a comment
+DELETE http://localhost:3000/comments/684f3d073851fec4b131e5cc
