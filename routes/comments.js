@@ -6,7 +6,7 @@ const ensreAuth = require('../middleware/authMiddleware');
 router.get('/', commentController.getAll);
 router.get('/:id', commentController.getSingle);
 
-router.post('/', ensreAuth, commentController.createComment);
+router.post('/', commentController.createComment);
 router.put('/:id', ensreAuth, commentController.updateComment);
 router.delete('/:id', ensreAuth, commentController.deleteComment);
 
