@@ -6,7 +6,7 @@ const ensreAuth = require('../middleware/authMiddleware');
 router.get('/', favoriteController.getAll);
 router.get('/:id', favoriteController.getSingle);
 
-router.post('/', ensreAuth, favoriteController.createFavorite);
+router.post('/', favoriteController.createFavorite);
 router.delete('/:id', ensreAuth, favoriteController.deleteFavorite);
 
 module.exports = router;
